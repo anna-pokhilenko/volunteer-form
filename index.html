@@ -11,51 +11,206 @@
 </head>
 <body>
   <header>
-    <h1>Apply to be a tree planter</h1>
-    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <h1 class="gutter pad-t push-0">Apply to be a tree planter</h1>
+    <p class="gutter">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
 
-  <fieldset>
-    <legend>Personal details</legend>
+    <form class="gutter" method="POST" action="https://formspree.io/FORM_ID">
 
-    <div class="">
-      <label for="name">Full name</label>
-      <input id="name" name="name" required>
-      <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-    </div>
 
-    <div class="">
-      <label for="nickname">What should we call you?</label>
-      <input id="nickname" name="nickname" required>
-      <p>What all your friends call you, e.g. “Liz”.</p>
-    </div>
+      <fieldset>
+        <legend>Personal details</legend>
 
-    <div class="">
-      <label for="date-of-birth">Date of birth</label>
-      <input type="date" id="date-of-birth" name="date-of-birth" required>
-    </div>
+        <div class="">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required>
+          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        </div>
 
-    <div class="">
-      <label for="size">T-shirt size</label>
-      <select id="size" name="_size" required>
-        <option>Select a t-shirt size</option>
-        <option>Fitted: XS</option>
-        <option>Fitted: S</option>
-        <option>Fitted: M</option>
-        <option>Fitted: L</option>
-        <option>Fitted: XL</option>
-        <option>Straight-cut: XS</option>
-        <option>Straight-cut: S</option>
-        <option>Straight-cut: M</option>
-        <option>Straight-cut: L</option>
-        <option>Straight-cut: XL</option>
-      </select>
-    </div>
+        <div class="">
+          <label for="nickname">What should we call you?</label>
+          <input id="nickname" name="nickname" required>
+          <p>What all your friends call you, e.g. “Liz”.</p>
+        </div>
 
-    <div class="">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-  </fieldset>
+        <div class="">
+          <label for="date-of-birth">Date of birth</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </div>
+
+        <div class="">
+          <label for="size">T-shirt size</label>
+          <select id="size" name="_size" required>
+            <option value="">Select a t-shirt size</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </select>
+        </div>
+
+        <div class="">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="">
+          <label for="phone">Phone number (optional)</label>
+          <input type="number" id="phone" name="phone">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Adress</legend>
+
+        <div class="">
+          <label for="street">Street address</label>
+          <input  id="street" name="street" required>
+        </div>
+
+        <div class="">
+          <label for="city">City</label>
+          <input  id="city" name="city" required>
+        </div>
+
+        <div class="">
+          <label for="postal">Postal Code</label>
+          <input  id="postal" name="postal" required>
+        </div>
+
+        <div class="">
+          <label for="province">Province</label>
+          <select id="province" name="province" required>
+            <option value="">Select a province</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Québec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>What activities are you interested in helping with?</legend>
+
+        <input type="checkbox" id="holes">
+        <label for="holes">Digging holes</label>
+
+        <input type="checkbox" id="dirty">
+        <label for="dirty">Getting dirty</label>
+
+        <input type="checkbox" id="heavy">
+        <label for="heavy">Lifting heavy objects</label>
+
+        <input type="checkbox" id="people">
+        <label for="people">Driving people</label>
+
+        <input type="checkbox" id="trees">
+        <label for="trees">Transporting trees</label>
+
+        <input type="checkbox" id="photos">
+        <label for="photos">Taking photos</label>
+
+        <input type="checkbox" id="publishing">
+        <label for="publishing">Online publishing</label>
+
+        <input type="checkbox" id="managing">
+        <label for="managing">Managing people</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you have any experience with the following?</legend>
+
+        <input type="checkbox" id="shovels">
+        <label for="shovels">Shovels</label>
+
+        <input type="checkbox" id="held">
+        <label for="held">Hand-held GPS</label>
+
+        <input type="checkbox" id="blogging">
+        <label for="blogging">Writing & blogging</label>
+
+        <input type="checkbox" id="photography">
+        <label for="photography">Photography</label>
+
+        <input type="checkbox" id="hill">
+        <label for="hill">Trail & hill climbing</label>
+
+        <input type="checkbox" id="craft">
+        <label for="craft">Bush craft</label>
+
+        <input type="checkbox" id="ATVs">
+        <label for="ATVs">ATVs</label>
+
+        <input type="checkbox" id="identification">
+        <label for="identification">Plant identification</label>
+
+        <input type="checkbox" id="planning">
+        <label for="planning">Special event planning</label>
+
+        <input type="checkbox" id="event">
+        <label for="event">Speaking to event</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you have a valid driver’s license?</legend>
+
+        <input type="radio" id="license-y" name="license">
+        <label for="license-y">Yes</label>
+
+        <input type="radio" id="license-n" name="license">
+        <label for="license-n">No</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you have a pick-up truck you’d be willing to use?</legend>
+
+        <input type="radio" id="truck-y" name="truck">
+        <label for="truck-y">Yes</label>
+
+        <input type="radio" id="truck-n" name="truck">
+        <label for="truck-n">No</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you have up-to-date first-aid certification?</legend>
+
+        <input type="radio" id="first-aid-y" name="first-aid">
+        <label for="first-aid-y">Yes</label>
+
+        <input type="radio" id="first-aid-n" name="first-aid">
+        <label for="first-aid-n">No</label>
+
+      </fieldset>
+
+        <div class="">
+          <label for="purpose">Please let us know any comments or questions you may have.</label>
+          <textarea id="purpose" name="message" required></textarea>
+        </div>
+
+      <div>
+        <button class="" type="submit">Apply</button>
+      </div>
+  </form>
 </body>
 </html>
