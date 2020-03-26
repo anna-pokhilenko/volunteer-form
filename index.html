@@ -4,87 +4,88 @@
   <meta charset="utf-8">
   <title>Volunteer Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/modules.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="gutter pad-t push-0">Apply to be a tree planter</h1>
-    <p class="gutter">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="push-2">
+    <h1 class="gutter-1-2 pad-t push-1-2 exa bold">Apply to be a tree planter</h1>
+    <p class="gutter-1-2 bold pad-b mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
 
-    <form class="gutter" method="POST" action="https://formspree.io/FORM_ID">
+    <form class="gutter-1-2" method="POST" action="https://formspree.io/FORM_ID">
 
 
       <fieldset>
-        <legend>Personal details</legend>
+        <legend class="giga push">Personal details</legend>
+        <div class="grid">
+          <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 space-right">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required>
+            <p class="italic micro push-0">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          </div>
 
-        <div class="">
-          <label for="name">Full name</label>
-          <input id="name" name="name" required>
-          <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          <div class="push unit xs-1 s-1 m-1-2 l-1-2 space-left">
+            <label for="nickname">What should we call you?</label>
+            <input id="nickname" name="nickname" required>
+            <p class="italic micro push-0">What all your friends call you, e.g. “Liz”.</p>
+          </div>
+
+          <div class="push unit xs-1 s-1 m-1-2 l-1-2 space-right">
+            <label for="date-of-birth">Date of birth</label>
+            <input  type="date" id="date-of-birth" name="date-of-birth" required>
+          </div>
+
+          <div class="push unit xs-1 s-1 m-1-2 l-1-2 space-left ">
+            <label for="size">T-shirt size</label>
+            <select id="size" name="_size" required>
+              <option value="">Select a t-shirt size</option>
+              <option>Fitted: XS</option>
+              <option>Fitted: S</option>
+              <option>Fitted: M</option>
+              <option>Fitted: L</option>
+              <option>Fitted: XL</option>
+              <option>Straight-cut: XS</option>
+              <option>Straight-cut: S</option>
+              <option>Straight-cut: M</option>
+              <option>Straight-cut: L</option>
+              <option>Straight-cut: XL</option>
+            </select>
+          </div>
+
+          <div class="push unit xs-1 s-1 m-1-2 l-1-2 space-right">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="space-left push unit xs-1 s-1 m-1-2 l-1-2 ">
+            <label for="phone">Phone number (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
         </div>
 
-        <div class="">
-          <label for="nickname">What should we call you?</label>
-          <input id="nickname" name="nickname" required>
-          <p>What all your friends call you, e.g. “Liz”.</p>
-        </div>
-
-        <div class="">
-          <label for="date-of-birth">Date of birth</label>
-          <input type="date" id="date-of-birth" name="date-of-birth" required>
-        </div>
-
-        <div class="">
-          <label for="size">T-shirt size</label>
-          <select id="size" name="_size" required>
-            <option value="">Select a t-shirt size</option>
-            <option>Fitted: XS</option>
-            <option>Fitted: S</option>
-            <option>Fitted: M</option>
-            <option>Fitted: L</option>
-            <option>Fitted: XL</option>
-            <option>Straight-cut: XS</option>
-            <option>Straight-cut: S</option>
-            <option>Straight-cut: M</option>
-            <option>Straight-cut: L</option>
-            <option>Straight-cut: XL</option>
-          </select>
-        </div>
-
-        <div class="">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="">
-          <label for="phone">Phone number (optional)</label>
-          <input type="number" id="phone" name="phone">
-        </div>
       </fieldset>
 
-      <fieldset>
-        <legend>Adress</legend>
+      <hr>
 
-        <div class="">
+      <fieldset>
+        <legend class="giga push-2">Adress</legend>
+
+      <div class="grid">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 space-right">
           <label for="street">Street address</label>
           <input  id="street" name="street" required>
         </div>
 
-        <div class="">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 space-left">
           <label for="city">City</label>
           <input  id="city" name="city" required>
         </div>
 
-        <div class="">
-          <label for="postal">Postal Code</label>
-          <input  id="postal" name="postal" required>
-        </div>
-
-        <div class="">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 space-right">
           <label for="province">Province</label>
           <select id="province" name="province" required>
             <option value="">Select a province</option>
@@ -104,7 +105,15 @@
           </select>
         </div>
 
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 space-left">
+          <label for="postal">Postal Code</label>
+          <input  id="postal" name="postal" required>
+        </div>
+      </div>
+
       </fieldset>
+
+      <hr>
 
       <fieldset>
         <legend>What activities are you interested in helping with?</legend>
@@ -135,6 +144,8 @@
 
       </fieldset>
 
+
+
       <fieldset>
         <legend>Do you have any experience with the following?</legend>
 
@@ -156,8 +167,8 @@
         <input type="checkbox" id="craft">
         <label for="craft">Bush craft</label>
 
-        <input type="checkbox" id="ATVs">
-        <label for="ATVs">ATVs</label>
+        <input type="checkbox" id="atvs">
+        <label for="atvs">ATVs</label>
 
         <input type="checkbox" id="identification">
         <label for="identification">Plant identification</label>
@@ -169,6 +180,8 @@
         <label for="event">Speaking to event</label>
 
       </fieldset>
+
+      <hr>
 
       <fieldset>
         <legend>Do you have a valid driver’s license?</legend>
@@ -208,7 +221,7 @@
           <textarea id="purpose" name="message" required></textarea>
         </div>
 
-      <div>
+      <div class="btn">
         <button class="" type="submit">Apply</button>
       </div>
   </form>

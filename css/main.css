@@ -1,4 +1,24 @@
+html {
+  font-family: "Noto Serif", serif;
+}
+
 header {
   background-color: #70ad55;
   color: #fff;
+}
+
+fieldset {
+  border: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .space-right {
+    padding-right: .5em;
+  }
+
+  .space-left {
+    padding-left: .5em;
+  }
+
 }
